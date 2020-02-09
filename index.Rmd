@@ -10,7 +10,7 @@ output:
         collapse: section
         scroll_highlight: yes
 documentclass: book  
-github-repo: zuofuhuang/CollegeRanking
+github-repo: zuofuhuang/Causal-Inference-Portfolio
 ---
   
 # Preface
