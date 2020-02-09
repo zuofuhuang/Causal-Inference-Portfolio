@@ -1,5 +1,5 @@
 ---
-title: 'Causal Inference Portfolio'
+title: 'STAT 394 Causal Inference Portfolio'
 author: 'Zuofu Huang, Spring 2020 Macalester College'
 site: bookdown::bookdown_site
 output: 
