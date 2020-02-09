@@ -1,1 +1,43 @@
 # *Birth Weight Paradox Uncovered?*
+
+When people are looking into prenatal care, someone discovered an interesting phenomenon: when we just focus on babies born with regular weight, mother smoking during pregnancy would increase the infant's mortality rate, which of course makes sense. But if we focus on babies with lower birth weights, mother pregnancy would in turn decrease the infant's mortality rate. 
+
+So here's comes the million-dollar question: 
+
+**Should maternal smoking be encouraged for mothers with premature infants or babies with lower weights?**
+
+&nbsp;
+
+Yes.
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+**Just Kidding.**
+
+&nbsp;
+
+Ludicrous as it sounds (I mean, we all know smoking is bad), we are put in a bad situation when data do not support our belief. As the plot shows, for babies with a birth weight lower than 2000g, mortality for mother smokers is lower than that of non-smokers.  
+
+![](Mortality.png)
+
+So, is it that smoking somehow triggers bodily responses beneficial to babies, or is there something else going on? Hernandez-Diaz et al. explained the paradox in their paper *The Birth Weight "Paradox" Uncovered?*.
+
+## Investigation Process
+
+To investigate why this is the case, researchers proposed a few possibilities why the paradox happened. 
+
+### Scenario 1
+
+![](Scenario1.png)
+
+## Take-away
+
+
+
+## References
+
+Hernández-Díaz, S., Schisterman, E. F., & Hernán, M. A. (2006). The birth weight “paradox” uncovered?. American journal of epidemiology, 164(11), 1115-1120.
