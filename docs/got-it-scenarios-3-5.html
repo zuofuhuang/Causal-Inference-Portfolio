@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Birth Weight Paradox Uncovered? | STAT 394 Causal Inference Portfolio</title>
-  <meta name="description" content="Chapter 2 Birth Weight Paradox Uncovered? | STAT 394 Causal Inference Portfolio" />
+  <title>2.2 Got it! (Scenarios 3-5) | STAT 394 Causal Inference Portfolio</title>
+  <meta name="description" content="2.2 Got it! (Scenarios 3-5) | STAT 394 Causal Inference Portfolio" />
   <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Birth Weight Paradox Uncovered? | STAT 394 Causal Inference Portfolio" />
+  <meta property="og:title" content="2.2 Got it! (Scenarios 3-5) | STAT 394 Causal Inference Portfolio" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="zuofuhuang/Causal-Inference-Portfolio" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Birth Weight Paradox Uncovered? | STAT 394 Causal Inference Portfolio" />
+  <meta name="twitter:title" content="2.2 Got it! (Scenarios 3-5) | STAT 394 Causal Inference Portfolio" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="getting-started-scenarios-1-and-2.html"/>
+<link rel="prev" href="getting-started-scenarios-1-and-2.html"/>
+<link rel="next" href="getting-fancy-scenarios-6-and-7.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -91,29 +91,31 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="birth-weight-paradox-uncovered" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> <em>Birth Weight Paradox Uncovered?</em></h1>
-<p>When people are looking into prenatal care, someone discovered an interesting phenomenon: when we just focus on babies born with regular weight, mother smoking during pregnancy would increase the infant’s mortality rate, which of course makes sense. But if we focus on babies with lower birth weights, mother pregnancy would in turn decrease the infant’s mortality rate.</p>
-<p>So here’s comes the million-dollar question:</p>
-<p><strong>Should maternal smoking be encouraged for mothers with premature infants or babies with lower weights?</strong></p>
+<div id="got-it-scenarios-3-5" class="section level2">
+<h2><span class="header-section-number">2.2</span> Got it! (Scenarios 3-5)</h2>
+<p><img src="Scenario3.png" /></p>
+<p>This is a combination of Scenarios 1 and 2. This complete causal diagram tells us that smoking and mortality are dependent even if we condition on Low Birth Weight. According to Hernandez-Diaz et al., however, most experts find this scenario overly-simplistic. In this causal diagram, even some common causes were not listed as part of the diagram (which we now know is a bad practice!). Congenital defects or conditions such as preeclampsia would contribute to both lower birth weights and infant mortality rates.</p>
+<p>So what if we do include an unknown factor, let’s say, U?</p>
 <p> </p>
-<p>Yes.</p>
+<p><img src="Scenario4.png" /></p>
+<p>In a more realistic diagram, which is Scenario 4, an unknown (and often unmeasured) variable comes into play. With some foundational knowledge of forks and chains, we know that if we condition on Low Birth Weight, a second path opens up:</p>
+<p><span class="math display">\[\text{Smoking} \rightarrow \text{LBW} \leftarrow \text{U} \rightarrow \text{Mortality}\]</span></p>
+<p>This is a path that gets in the way of understanding the causal relationship between smoking and mortality. Over here, the Paradox seems to reveal itself.</p>
 <p> </p>
-<p> </p>
-<p> </p>
-<p><strong>Just Kidding.</strong></p>
-<p> </p>
-<p>Ludicrous as it sounds (I mean, we all know smoking is bad), we are put in a bad situation when data do not support our belief. As the plot shows, for babies with a birth weight lower than 2000g, mortality for mother smokers is lower than that of non-smokers.</p>
-<p><img src="Mortality.png" /></p>
-<p>So, is it that smoking somehow triggers bodily responses beneficial to babies, or is there something else going on? Hernandez-Diaz et al. explained the paradox in their paper <em>The Birth Weight “Paradox” Uncovered?</em>.</p> 
+<p>We isolate the path that causes us the problem to a new diagram: Scenario 5.</p>
+<p><img src="Scenario5.png" /></p>
+<p>When we condition on Low Birth Weight, smoking and U are dependent. Here, we observe that both smoking and U contribute to Low Birth Weight, but U additionally contributes to mortality!</p>
+<p>In the group with lower birth weight babies, while smokers may not have a high rate of U, non-smokers would necessarily have to have U to be in that group!</p>
+<p><span class="math display">\[\frac{\text{smokers} \Leftarrow \text{not a high rate of U}}{\text{non-smokers} \Leftarrow \text{Necessarily had U!}}\]</span></p>
+<p>Now we know this is an unfair comparison when we only draw inferences between smoking and infant mortality. Correlation doesn’t imply causation!</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="getting-started-scenarios-1-and-2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="getting-started-scenarios-1-and-2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="getting-fancy-scenarios-6-and-7.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
