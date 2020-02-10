@@ -38,7 +38,7 @@ This is the simplest model the researchers proposed. We may think: "Well, maybe 
 
 ![](Scenario2.png)
 
-Alternatively, we may see the effect of smoking on mortality rate directly. Similarly with Scenario 1, this fork structure of DAG tells us that mortality and smoking are marginally dependent, but conditionally independent on Low Birth Wright. But our data tell us that mortality and smoking are dependent conditioned on Low Birth Weight. This model is not consistent with our findings.
+Alternatively, we may see the effect of smoking on mortality rate directly. Similarly with Scenario 1, this fork structure of DAG tells us that mortality and smoking are marginally dependent, but conditionally independent on Low Birth Weight. But our data tell us that mortality and smoking are dependent conditioned on Low Birth Weight. This model is not consistent with our findings.
 
 ## Got it! (Scenarios 3-5)
 
@@ -111,7 +111,7 @@ And we are done!
 
 ### What did we learn?
 
-From a "simple" analysis of causal diagrams, we can illustrate how detrimental effects of smoking can be somehow mistrued as a beneficial thing for babies. This tells us, for one, the importance of looking into the unwanted paths and adjusting for those.
+From a "simple" analysis of causal diagrams, we can illustrate how detrimental effects of smoking can be somehow misconstrued as a beneficial thing for babies. This tells us, for one, the importance of looking into the unwanted paths and adjusting for those.
 
 When we attempt to find a causal relationship between two variables that seem to have a lot of intermediate values and common factors, it could be a good idea to first draw a causal diagram and think if we are leaving any "backdoor" :)
 
