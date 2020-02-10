@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.5 Paradox unveiled | STAT 394 Causal Inference Portfolio</title>
-  <meta name="description" content="2.5 Paradox unveiled | STAT 394 Causal Inference Portfolio" />
+  <title>2.3 Getting fancy (Scenarios 6) | STAT 394 Causal Inference Portfolio</title>
+  <meta name="description" content="2.3 Getting fancy (Scenarios 6) | STAT 394 Causal Inference Portfolio" />
   <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.5 Paradox unveiled | STAT 394 Causal Inference Portfolio" />
+  <meta property="og:title" content="2.3 Getting fancy (Scenarios 6) | STAT 394 Causal Inference Portfolio" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="zuofuhuang/Causal-Inference-Portfolio" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.5 Paradox unveiled | STAT 394 Causal Inference Portfolio" />
+  <meta name="twitter:title" content="2.3 Getting fancy (Scenarios 6) | STAT 394 Causal Inference Portfolio" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="getting-really-fancy-scenario-7.html"/>
-
+<link rel="prev" href="got-it-scenarios-3-5.html"/>
+<link rel="next" href="getting-really-fancy-scenario-7.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -92,27 +92,22 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="paradox-unveiled" class="section level2">
-<h2><span class="header-section-number">2.5</span> Paradox unveiled</h2>
-<div id="what-did-we-learn" class="section level3">
-<h3><span class="header-section-number">2.5.1</span> What did we learn?</h3>
-<p>From a “simple” analysis of causal diagrams, we can illustrate how detrimental effects of smoking can be somehow mistrued as a beneficial thing for babies. This tells us, for one, the importance of looking into the unwanted paths and adjusting for those.</p>
-<p>When we attempt to find a causal relationship between two variables that seem to have a lot of intermediate values and common factors, it could be a good idea to first draw a causal diagram and think if we are leaving any “backdoor” :)</p>
+<div id="getting-fancy-scenarios-6" class="section level2">
+<h2><span class="header-section-number">2.3</span> Getting fancy (Scenarios 6)</h2>
+<p><img src="Scenario6.png" /></p>
+<p>One way of making our diagram fancier (more realistic) is to add more causal relationships. The most basic way we can do that is adding an arrow from smoking to mortality. In this case, the effect of mortality from smoking conditioned on birth weight would be two fold (because there are two active paths!):</p>
+<ol style="list-style-type: decimal">
+<li><p>The true effects of smoking on mortality (what we want)</p></li>
+<li><p>The unwanted bias from U, the common cause of low birth weights and mortality</p></li>
+</ol>
 </div>
-<div id="references" class="section level3">
-<h3><span class="header-section-number">2.5.2</span> References</h3>
-<p>Hernández-Díaz, S., Schisterman, E. F., &amp; Hernán, M. A. (2006). The birth weight “paradox” uncovered?. American journal of epidemiology, 164(11), 1115-1120.</p>
-
-</div>
-</div>
-<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="getting-really-fancy-scenario-7.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="got-it-scenarios-3-5.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="getting-really-fancy-scenario-7.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

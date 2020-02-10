@@ -26,7 +26,7 @@ Ludicrous as it sounds (I mean, we all know smoking is bad), we are put in a bad
 
 So, is it that smoking somehow triggers bodily responses beneficial to babies, or is there something else going on? Hernandez-Diaz et al. explained the paradox in their paper *The Birth Weight "Paradox" Uncovered?*.
 
-## Getting Started (Scenarios 1 and 2)
+## Getting Started (Scenarios 1-2)
 
 To investigate why this is the case, researchers proposed a few possibilities why the paradox happened. 
 
@@ -73,17 +73,47 @@ $$\frac{\text{smokers} \Leftarrow \text{not a high rate of U}}{\text{non-smokers
 Now we know this is an unfair comparison when we only draw inferences between smoking and infant mortality. Correlation doesn't imply causation!
 
 
-## Getting fancy (Scenarios 6 and 7)
+## Getting fancy (Scenarios 6)
 
 ![](Scenario6.png)
 
+One way of making our diagram fancier (more realistic) is to add more causal relationships. The most basic way we can do that is adding an arrow from smoking to mortality. In this case, the effect of mortality from smoking conditioned on birth weight would be two fold (because there are two active paths!):
+
+1. The true effects of smoking on mortality (what we want)
+
+2. The unwanted bias from U, the common cause of low birth weights and mortality
+
+## Getting really fancy (Scenario 7)
 
 ![](Scenario7.png)
 
+To best mimic what actually happens in reality, we could then specify two types of low birth weights: Type-I and Type-II, caused by smoking and U respectively.
+
+In the **most** realistic setting, when we condition on LBW, there are three active paths between smoking and mortality!
+
+1. The true effects of smoking on mortality (what we want)
+
+2. $\text{Smoking} \rightarrow \text{LBW-Type A} \rightarrow \text{LBW} \leftarrow \text{LBW-Type B} \rightarrow \text{Mortality}$
+
+This is one of the two unwanted paths we want to eliminate. But at least we can try to measure its effects.
+
+3. $\text{Smoking} \rightarrow \text{LBW-Type A} \rightarrow \text{LBW} \leftarrow \text{LBW-Type B} \leftarrow {U} \rightarrow \text{Mortality}$
+
+This is one of the two unwanted paths, where the unwanted bias from U comes from. Since U is unmeasured, this would fundamentally bias our result.
+
+When we condition on the group with low birth weight babies, while smoking does cause both Low Birth Weight and mortality, we believe U is actually a bigger cause of mortality that's unmeasured! But since U also causes Low Birth Weight, observations who suffer from U, and thus mortality, somehow sneak in the Low Birth Weight group as well and bias the result.
+
+&nbsp;
+
+And we are done!
 
 ## Paradox unveiled
 
-### What do we learn?
+### What did we learn?
+
+From a "simple" analysis of causal diagrams, we can illustrate how detrimental effects of smoking can be somehow mistrued as a beneficial thing for babies. This tells us, for one, the importance of looking into the unwanted paths and adjusting for those.
+
+When we attempt to find a causal relationship between two variables that seem to have a lot of intermediate values and common factors, it could be a good idea to first draw a causal diagram and think if we are leaving any "backdoor" :)
 
 ### References
 
