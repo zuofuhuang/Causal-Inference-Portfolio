@@ -15,9 +15,9 @@ github-repo: zuofuhuang/Causal-Inference-Portfolio
   
 # Preface
 
-Hello! Welcome to the bookdown of my STAT 394 Causarl Inference Portfolio! 
+Hello! Welcome to the bookdown of my STAT 394 Causal Inference Portfolio! 
 
-Contact me if you have any questions! (zuofuhuang@gmail.com)
+Contact me if you have any questions! (zuofuhuang@gmail.com).
 
 Since we are talking about Causal Inference, of course we need the aid of some old-fashioned comic.
 
