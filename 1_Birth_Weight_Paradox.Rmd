@@ -73,7 +73,7 @@ $$\frac{\text{smokers} \Leftarrow \text{not a high rate of U}}{\text{non-smokers
 Now we know this is an unfair comparison when we only draw inferences between smoking and infant mortality. Correlation doesn't imply causation!
 
 
-## Getting fancy (Scenarios 6)
+## Getting fancy (Scenario 6)
 
 ![](Scenario6.png)
 

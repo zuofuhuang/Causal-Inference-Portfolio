@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.1 Getting Started (Scenarios 1-2) | STAT 394 Causal Inference Portfolio</title>
-  <meta name="description" content="2.1 Getting Started (Scenarios 1-2) | STAT 394 Causal Inference Portfolio" />
+  <title>2.3 Getting fancy (Scenario 6) | STAT 394 Causal Inference Portfolio</title>
+  <meta name="description" content="2.3 Getting fancy (Scenario 6) | STAT 394 Causal Inference Portfolio" />
   <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.1 Getting Started (Scenarios 1-2) | STAT 394 Causal Inference Portfolio" />
+  <meta property="og:title" content="2.3 Getting fancy (Scenario 6) | STAT 394 Causal Inference Portfolio" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="zuofuhuang/Causal-Inference-Portfolio" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.1 Getting Started (Scenarios 1-2) | STAT 394 Causal Inference Portfolio" />
+  <meta name="twitter:title" content="2.3 Getting fancy (Scenario 6) | STAT 394 Causal Inference Portfolio" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="birth-weight-paradox-uncovered.html"/>
-<link rel="next" href="got-it-scenarios-3-5.html"/>
+<link rel="prev" href="got-it-scenarios-3-5.html"/>
+<link rel="next" href="getting-really-fancy-scenario-7.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -92,22 +92,22 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="getting-started-scenarios-1-2" class="section level2">
-<h2><span class="header-section-number">2.1</span> Getting Started (Scenarios 1-2)</h2>
-<p>To investigate why this is the case, researchers proposed a few possibilities why the paradox happened.</p>
-<p><img src="Scenario1.png" /></p>
-<p>This is the simplest model the researchers proposed. We may think: “Well, maybe smoking causes low weight babies which then causes infant mortality.” This chain structure of DAG tells us that mortality and smoking are marginally dependent, but conditionally independent on Low Birth Wright. But our data tell us that mortality and smoking are dependent conditioned on Low Birth Weight. This model is not consistent with our findings.</p>
-<p> </p>
-<p><img src="Scenario2.png" /></p>
-<p>Alternatively, we may see the effect of smoking on mortality rate directly. Similarly with Scenario 1, this fork structure of DAG tells us that mortality and smoking are marginally dependent, but conditionally independent on Low Birth Weight. But our data tell us that mortality and smoking are dependent conditioned on Low Birth Weight. This model is not consistent with our findings.</p>
+<div id="getting-fancy-scenario-6" class="section level2">
+<h2><span class="header-section-number">2.3</span> Getting fancy (Scenario 6)</h2>
+<p><img src="Scenario6.png" /></p>
+<p>One way of making our diagram fancier (more realistic) is to add more causal relationships. The most basic way we can do that is adding an arrow from smoking to mortality. In this case, the effect of mortality from smoking conditioned on birth weight would be two fold (because there are two active paths!):</p>
+<ol style="list-style-type: decimal">
+<li><p>The true effects of smoking on mortality (what we want)</p></li>
+<li><p>The unwanted bias from U, the common cause of low birth weights and mortality</p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="birth-weight-paradox-uncovered.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="got-it-scenarios-3-5.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="got-it-scenarios-3-5.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="getting-really-fancy-scenario-7.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
