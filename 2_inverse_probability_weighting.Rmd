@@ -56,12 +56,14 @@ Let's break this down. Take the upper branch of the $A = 0$ scenario as an examp
 
 Now we can count the outcome given $A = 1$ and $A = 0$. 
 
-+ In the $A = 1$ tree diagram, $P(Y = 1) = (54 + 28)/100 = 0.82$.
++ In the $A = 1$ tree diagram, 
+  - $P(Y = 1) = (54 + 28)/100 = 0.82$.
   - This probability is called $P(Y = 1 \mid \text{do}(A = 1))$.
   
 \vspace{5mm}
 
-+ In the $A = 0$ tree diagram, $P(Y = 1) = (24 + 8)/100 = 0.32$.
++ In the $A = 0$ tree diagram, 
+  - $P(Y = 1) = (24 + 8)/100 = 0.32$.
   - This probability is called $P(Y = 1 \mid \text{do}(A = 0))$.
 
 ## Do-Probability and Causal Effect
@@ -99,5 +101,5 @@ Hope this helps your understanding of some more basic causal inference! Stay tun
 
 ## References
 
-Myint, Leslie. (2020). *STAT 394: Causal Inference*. Retrieved April. 7th, 2020. https://lmyint.github.io/causal_spring_2020/references.html
+Myint, Leslie. (2020). *STAT 394: Causal Inference*. Retrieved April. 7th, 2020. https://lmyint.github.io/causal_spring_2020/
 
