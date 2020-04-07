@@ -13,7 +13,7 @@ documentclass: book
 github-repo: zuofuhuang/Causal-Inference-Portfolio
 ---
   
-# Preface
+# Preface {-}
 
 Hello! Welcome to the bookdown of my STAT 394 Causal Inference Portfolio! 
 

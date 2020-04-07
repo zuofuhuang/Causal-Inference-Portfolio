@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Birth Weight Paradox Uncovered? | STAT 394 Causal Inference Portfolio</title>
-  <meta name="description" content="Chapter 1 Birth Weight Paradox Uncovered? | STAT 394 Causal Inference Portfolio" />
+  <title>2.1 A Nice Tree | STAT 394 Causal Inference Portfolio</title>
+  <meta name="description" content="2.1 A Nice Tree | STAT 394 Causal Inference Portfolio" />
   <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Birth Weight Paradox Uncovered? | STAT 394 Causal Inference Portfolio" />
+  <meta property="og:title" content="2.1 A Nice Tree | STAT 394 Causal Inference Portfolio" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="zuofuhuang/Causal-Inference-Portfolio" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Birth Weight Paradox Uncovered? | STAT 394 Causal Inference Portfolio" />
+  <meta name="twitter:title" content="2.1 A Nice Tree | STAT 394 Causal Inference Portfolio" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="getting-started-scenarios-1-2.html"/>
+<link rel="prev" href="inverse-probability-weighting.html"/>
+<link rel="next" href="do-probability-and-causal-effect.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -97,29 +97,47 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="birth-weight-paradox-uncovered" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> <em>Birth Weight Paradox Uncovered?</em></h1>
-<p>When people are looking into prenatal care, someone discovered an interesting phenomenon: when we just focus on babies born with regular weight, mother smoking during pregnancy would increase the infant’s mortality rate, which of course makes sense. But if we focus on babies with lower birth weights, mother pregnancy would in turn decrease the infant’s mortality rate.</p>
-<p>So here’s comes the million-dollar question:</p>
-<p><strong>Should maternal smoking be encouraged for mothers with premature infants or babies with lower weights?</strong></p>
+<div id="a-nice-tree" class="section level2">
+<h2><span class="header-section-number">2.1</span> A Nice Tree</h2>
+<p>Consider the following data:</p>
+<p><img src="data.png" /></p>
+<p>We are motivated to understand the effect of A on Y. How might we approach?</p>
 <p> </p>
-<p>Yes.</p>
+<p>If any, we could obtain a tree diagram from the given data.</p>
+<p><img src="InitialTree.png" /></p>
+<p>With that, we have the freedom to make the treated and untreated have the same number of people through <strong>upscaling</strong>.</p>
+<p>If <span class="math inline">\(A = 1\)</span>, the tree becomes:</p>
+<p><img src="treeA1.png" /></p>
+<p>If <span class="math inline">\(A = 0\)</span>, the tree becomes:</p>
+<p><img src="treeA0.png" /></p>
 <p> </p>
+<p>Let’s break this down. Take the upper branch of the <span class="math inline">\(A = 0\)</span> scenario as an example. In this scenario, we pretend that no one was treated, with the hope to learn how the outcome changes. Therefore, under the <span class="math inline">\(Z = 1\)</span> branch, the <span class="math inline">\(A = 1\)</span> group doesn’t exist anymore. Reasonably, we can upscale the <span class="math inline">\(A = 1\)</span> group (<span class="math inline">\(n = 30\)</span>) to the size of the sample space (<span class="math inline">\(n = 60\)</span>) by <span class="math inline">\(\frac{60}{30}\)</span>. This fraction <span class="math inline">\(\frac{60}{30}\)</span> is called the <strong>weight</strong>.</p>
+<ul>
+<li><span class="math inline">\(\frac{30}{60}\)</span> is <span class="math inline">\(P(A = 0 \mid Z)\)</span>, and this weight is the inverse of <span class="math inline">\(P(A = 0 \mid Z)\)</span>. Hence the name inverse probability weighting (IP weighting).</li>
+</ul>
 <p> </p>
-<p> </p>
-<p><strong>Just Kidding.</strong></p>
-<p> </p>
-<p>Ludicrous as it sounds (I mean, we all know smoking is bad), we are put in a bad situation when data do not support our belief. As the plot shows, for babies with a birth weight lower than 2000g, mortality for infants born to maternal smokers is lower than that of non-smokers.</p>
-<p><img src="Mortality.png" /></p>
-<p>So, is it that smoking somehow triggers bodily responses beneficial to babies, or is there something else going on? Hernandez-Diaz et al. explained the paradox in their paper <em>The Birth Weight “Paradox” Uncovered?</em>.</p> 
+<p>Now we can count the outcome given <span class="math inline">\(A = 1\)</span> and <span class="math inline">\(A = 0\)</span>.</p>
+<ul>
+<li>In the <span class="math inline">\(A = 1\)</span> tree diagram, <span class="math inline">\(P(Y = 1) = (54 + 28)/100 = 0.82\)</span>.
+<ul>
+<li>This probability is called <span class="math inline">\(P(Y = 1 \mid \text{do}(A = 1))\)</span>.</li>
+</ul></li>
+</ul>
+
+<ul>
+<li>In the <span class="math inline">\(A = 0\)</span> tree diagram, <span class="math inline">\(P(Y = 1) = (24 + 8)/100 = 0.32\)</span>.
+<ul>
+<li>This probability is called <span class="math inline">\(P(Y = 1 \mid \text{do}(A = 0))\)</span>.</li>
+</ul></li>
+</ul>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="getting-started-scenarios-1-2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="inverse-probability-weighting.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="do-probability-and-causal-effect.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

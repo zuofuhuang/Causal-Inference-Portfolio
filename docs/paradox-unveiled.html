@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.5 Paradox unveiled | STAT 394 Causal Inference Portfolio</title>
-  <meta name="description" content="2.5 Paradox unveiled | STAT 394 Causal Inference Portfolio" />
+  <title>1.5 Paradox unveiled | STAT 394 Causal Inference Portfolio</title>
+  <meta name="description" content="1.5 Paradox unveiled | STAT 394 Causal Inference Portfolio" />
   <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.5 Paradox unveiled | STAT 394 Causal Inference Portfolio" />
+  <meta property="og:title" content="1.5 Paradox unveiled | STAT 394 Causal Inference Portfolio" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="zuofuhuang/Causal-Inference-Portfolio" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.5 Paradox unveiled | STAT 394 Causal Inference Portfolio" />
+  <meta name="twitter:title" content="1.5 Paradox unveiled | STAT 394 Causal Inference Portfolio" />
   
   
   
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="getting-really-fancy-scenario-7.html"/>
-
+<link rel="next" href="inverse-probability-weighting.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -64,16 +64,21 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preface</a></li>
-<li class="chapter" data-level="2" data-path="birth-weight-paradox-uncovered.html"><a href="birth-weight-paradox-uncovered.html"><i class="fa fa-check"></i><b>2</b> <em>Birth Weight Paradox Uncovered?</em></a><ul>
-<li class="chapter" data-level="2.1" data-path="getting-started-scenarios-1-2.html"><a href="getting-started-scenarios-1-2.html"><i class="fa fa-check"></i><b>2.1</b> Getting Started (Scenarios 1-2)</a></li>
-<li class="chapter" data-level="2.2" data-path="got-it-scenarios-3-5.html"><a href="got-it-scenarios-3-5.html"><i class="fa fa-check"></i><b>2.2</b> Got it! (Scenarios 3-5)</a></li>
-<li class="chapter" data-level="2.3" data-path="getting-fancy-scenario-6.html"><a href="getting-fancy-scenario-6.html"><i class="fa fa-check"></i><b>2.3</b> Getting fancy (Scenario 6)</a></li>
-<li class="chapter" data-level="2.4" data-path="getting-really-fancy-scenario-7.html"><a href="getting-really-fancy-scenario-7.html"><i class="fa fa-check"></i><b>2.4</b> Getting really fancy (Scenario 7)</a></li>
-<li class="chapter" data-level="2.5" data-path="paradox-unveiled.html"><a href="paradox-unveiled.html"><i class="fa fa-check"></i><b>2.5</b> Paradox unveiled</a><ul>
-<li class="chapter" data-level="2.5.1" data-path="paradox-unveiled.html"><a href="paradox-unveiled.html#what-did-we-learn"><i class="fa fa-check"></i><b>2.5.1</b> What did we learn?</a></li>
-<li class="chapter" data-level="2.5.2" data-path="paradox-unveiled.html"><a href="paradox-unveiled.html#references"><i class="fa fa-check"></i><b>2.5.2</b> References</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="birth-weight-paradox-uncovered.html"><a href="birth-weight-paradox-uncovered.html"><i class="fa fa-check"></i><b>1</b> <em>Birth Weight Paradox Uncovered?</em></a><ul>
+<li class="chapter" data-level="1.1" data-path="getting-started-scenarios-1-2.html"><a href="getting-started-scenarios-1-2.html"><i class="fa fa-check"></i><b>1.1</b> Getting Started (Scenarios 1-2)</a></li>
+<li class="chapter" data-level="1.2" data-path="got-it-scenarios-3-5.html"><a href="got-it-scenarios-3-5.html"><i class="fa fa-check"></i><b>1.2</b> Got it! (Scenarios 3-5)</a></li>
+<li class="chapter" data-level="1.3" data-path="getting-fancy-scenario-6.html"><a href="getting-fancy-scenario-6.html"><i class="fa fa-check"></i><b>1.3</b> Getting fancy (Scenario 6)</a></li>
+<li class="chapter" data-level="1.4" data-path="getting-really-fancy-scenario-7.html"><a href="getting-really-fancy-scenario-7.html"><i class="fa fa-check"></i><b>1.4</b> Getting really fancy (Scenario 7)</a></li>
+<li class="chapter" data-level="1.5" data-path="paradox-unveiled.html"><a href="paradox-unveiled.html"><i class="fa fa-check"></i><b>1.5</b> Paradox unveiled</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="paradox-unveiled.html"><a href="paradox-unveiled.html#what-did-we-learn"><i class="fa fa-check"></i><b>1.5.1</b> What did we learn?</a></li>
+<li class="chapter" data-level="1.5.2" data-path="paradox-unveiled.html"><a href="paradox-unveiled.html#references"><i class="fa fa-check"></i><b>1.5.2</b> References</a></li>
 </ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="inverse-probability-weighting.html"><a href="inverse-probability-weighting.html"><i class="fa fa-check"></i><b>2</b> <em>Inverse Probability Weighting</em></a><ul>
+<li class="chapter" data-level="2.1" data-path="a-nice-tree.html"><a href="a-nice-tree.html"><i class="fa fa-check"></i><b>2.1</b> A Nice Tree</a></li>
+<li class="chapter" data-level="2.2" data-path="do-probability-and-causal-effect.html"><a href="do-probability-and-causal-effect.html"><i class="fa fa-check"></i><b>2.2</b> Do-Probability and Causal Effect</a></li>
+<li class="chapter" data-level="2.3" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i><b>2.3</b> References</a></li>
 </ul></li>
 </ul>
 
@@ -93,14 +98,14 @@
 
             <section class="normal" id="section-">
 <div id="paradox-unveiled" class="section level2">
-<h2><span class="header-section-number">2.5</span> Paradox unveiled</h2>
+<h2><span class="header-section-number">1.5</span> Paradox unveiled</h2>
 <div id="what-did-we-learn" class="section level3">
-<h3><span class="header-section-number">2.5.1</span> What did we learn?</h3>
+<h3><span class="header-section-number">1.5.1</span> What did we learn?</h3>
 <p>From a “simple” analysis of causal diagrams, we can see how the detrimental effects of smoking can be somehow misconstrued as a beneficial thing for babies. This tells us, for one, the importance of looking into the unwanted paths and adjusting for those.</p>
 <p>When we attempt to find a causal relationship between two variables that seem to have a lot of intermediate values and common factors, it could be a good idea to first draw a causal diagram and think if we are leaving any “backdoor”, or in this case a “frontdoor” spurious path :)</p>
 </div>
 <div id="references" class="section level3">
-<h3><span class="header-section-number">2.5.2</span> References</h3>
+<h3><span class="header-section-number">1.5.2</span> References</h3>
 <p>Hernández-Díaz, S., Schisterman, E. F., &amp; Hernán, M. A. (2006). The birth weight “paradox” uncovered?. American journal of epidemiology, 164(11), 1115-1120.</p>
 
 </div>
@@ -111,8 +116,8 @@
           </div>
         </div>
       </div>
-<a href="getting-really-fancy-scenario-7.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="getting-really-fancy-scenario-7.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="inverse-probability-weighting.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

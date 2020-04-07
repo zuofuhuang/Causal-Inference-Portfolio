@@ -2,7 +2,7 @@ book_filename: "Causal-Inference-Portfolio"
 language:
   ui:
     chapter_name: "Chapter "
-rmd_files: ['index.Rmd',"1_Birth_Weight_Paradox.Rmd"]
+rmd_files: ['index.Rmd',"1_Birth_Weight_Paradox.Rmd","2_inverse_probability_weighting.Rmd"]
 delete_merged_file: true
 output_dir: "docs"
 
