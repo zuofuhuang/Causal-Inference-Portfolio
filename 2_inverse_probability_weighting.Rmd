@@ -91,6 +91,8 @@ Finally, we are ready to define the causal effect of A on Y:
 
 $$\text{ACE (Average Causal Effect)} = P(Y = 1 \mid \text{do}(A = 1)) - P(Y = 1 \mid \text{do}(A = 0))$$
 
+This makes sense: the difference in the outcome after we intervene on A can only be due to A.
+
 If $\text{ACE} = 0.5$:
 
 + We interpret it as the probability of $Y = 1$ is $50\%$ higher if we have everyone treated, compared with if we have no one treated.
